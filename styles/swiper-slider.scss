@@ -1,0 +1,34 @@
+.swiper-container {
+    width: 100%;
+    padding: 50px 0 100px;
+    background-color: #ffffff;
+
+    &:hover .info {
+        opacity: 0;
+    }
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+}
+
+.info {
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition: 600ms;
+    background-color: #0000009c;
+
+    img {
+        width: 40%;
+        margin-top: 5px;
+    }
+}
