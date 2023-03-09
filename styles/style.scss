@@ -468,10 +468,6 @@ $hover-color: #ffe600;
         }
     }
 
-    .dey::before {
-        content: 'օր';
-    }
-
     .hour::before {
         content: 'ժամ';
     }
@@ -553,16 +549,16 @@ $hover-color: #ffe600;
 footer {
     background-color: #2C2C2C;
     color: white;
-}
 
-footer .wrapper {
-    width: 90%;
-    margin: 0 auto;
-    padding: 50px 0;
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 0;
 
-    p {
-        margin: 40px 0;
-        font-size: 13px;
+        p {
+            margin: 40px 0;
+            font-size: 13px;
+        }
     }
 }
 
