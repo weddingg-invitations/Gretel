@@ -410,9 +410,6 @@ img {
   font-size: 15px;
   position: absolute;
 }
-.sect5 .dey::before {
-  content: "օր";
-}
 .sect5 .hour::before {
   content: "ժամ";
 }
@@ -483,7 +480,6 @@ footer {
   background-color: #2C2C2C;
   color: white;
 }
-
 footer .wrapper {
   width: 90%;
   margin: 0 auto;
