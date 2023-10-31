@@ -1,6 +1,6 @@
 $text-color: #795548;
 $button-color: #FFC700;
-$hover-color: #ffe600;
+$hover-color: #ffe0b5;
 
 //just colors
 .blue {
@@ -145,7 +145,19 @@ $hover-color: #ffe600;
 
         &:hover {
             background-color: $hover-color;
-            color: white;
+        }
+    }
+
+    .top-nav-items-login {
+        width: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        &:hover{
+            background-color: #ffe0b5;
+            transform: scale(1.1);
         }
     }
 }

@@ -122,8 +122,18 @@
   transition: 250ms;
 }
 .top-cont .top-nav-items:hover {
-  background-color: #ffe600;
-  color: white;
+  background-color: #ffe0b5;
+}
+.top-cont .top-nav-items-login {
+  width: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.top-cont .top-nav-items-login:hover {
+  background-color: #ffe0b5;
+  transform: scale(1.1);
 }
 
 .head-img-cont {
@@ -170,7 +180,7 @@
   cursor: pointer;
 }
 .buttons:hover {
-  background-color: #ffe600;
+  background-color: #ffe0b5;
   color: white;
 }
 
