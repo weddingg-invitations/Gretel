@@ -1,0 +1,15 @@
+{
+  "name": "lesson_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon  backend/index.js"
+  },
+  "author": "Edgar Karapetyan",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

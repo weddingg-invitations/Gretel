@@ -1,16 +1,12 @@
 // popup closed
 const popup_loader = document.querySelector('.popup_loader')
-const cssload_preloader = document.querySelector('.cssload-preloader')
 
 setTimeout(() => {
-    cssload_preloader.style.cssText = 'display: flex;'
-}, 1000)
-setTimeout(() => {
-    popup_loader.style.cssText = 'opacity: 0;'
-}, 4000)
+    popup_loader.style.cssText = 'opacity: 0; transition:700ms'
+}, 800)
 setTimeout(() => {
     popup_loader.style.cssText = 'display: none;'
-}, 5000)
+}, 1300)
 
 // -------------------------------------------------------------------------
 // timer 
