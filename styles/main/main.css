@@ -93,11 +93,13 @@
 }
 
 .top-cont {
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 30px;
   padding: 0 5%;
   background-color: white;
+  height: 60px;
 }
 .top-cont .top-logo {
   display: flex;
@@ -150,6 +152,7 @@
 }
 .head-img-cont .top-cont-bottom-vector {
   width: 100%;
+  height: auto;
   position: absolute;
   bottom: 0;
 }
@@ -171,7 +174,7 @@
 .buttons {
   text-align: center;
   color: #795548;
-  background: #FFC700;
+  background: #feff00;
   border-radius: 5px;
   width: -moz-fit-content;
   width: fit-content;
@@ -180,7 +183,7 @@
   cursor: pointer;
 }
 .buttons:hover {
-  background-color: #ffe0b5;
+  background-color: #eded14;
   color: white;
 }
 
@@ -195,7 +198,7 @@
 
 .mini-title {
   margin: 0;
-  color: #FFC700;
+  color: #ff6666;
   text-align: center;
   text-transform: capitalize;
 }
@@ -275,6 +278,7 @@
   align-items: center;
 }
 .sect3-bg .top-vector {
+  height: auto;
   transform: rotate(180deg);
 }
 .sect3-bg .bottom-vector {
@@ -345,10 +349,12 @@
 }
 .sect5-bg .sect5-bg-imgtop {
   position: absolute;
+  height: auto;
   top: -1px;
   transform: rotate(180deg);
 }
 .sect5-bg .sect5-bg-imgbottom {
+  height: auto;
   position: absolute;
   bottom: 0;
 }
@@ -402,7 +408,7 @@
 }
 
 .sect-6-title {
-  color: #FFC700;
+  color: #ff6666;
   text-align: center;
 }
 
@@ -461,8 +467,16 @@
 }
 
 footer {
+  position: relative;
   background-color: #2C2C2C;
   color: white;
+}
+footer .footer-vector {
+  transform: rotateX(180deg);
+  top: -20px;
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 footer .wrapper {
   width: 90%;
@@ -472,6 +486,9 @@ footer .wrapper {
 footer .wrapper p {
   margin: 40px 0;
   font-size: 13px;
+}
+footer .footer-button {
+  display: inline-block;
 }
 
 .footer-lists-conts {
@@ -485,25 +502,115 @@ footer .wrapper p {
 .footer-lists-conts .footer-lists-cont p {
   margin: 10px 0;
 }
-.footer-lists-conts .footer-lists-cont .footer-menu-block {
+.footer-lists-conts .footer-menu-block {
   display: flex;
   flex-direction: column;
 }
-.footer-lists-conts .footer-lists-cont .footer-menu-block a {
-  color: white;
+.footer-lists-conts .footer-menu-block .top-nav-items {
+  color: #dbaf1e;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 3px 3px 0;
   margin-bottom: 3px;
+  transition: 150ms;
+}
+.footer-lists-conts .footer-menu-block .top-nav-items:hover {
+  color: #ffc400;
 }
 
+.mobileBtn {
+  width: 38px;
+  transition: 100ms;
+  display: none;
+  cursor: pointer;
+}
+.mobileBtn:hover {
+  transform: scale(1.1);
+}
+.mobileBtn:active {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 1000px) {
+  .mobileBtn {
+    display: block;
+  }
+  .head-img-cont {
+    background-position: left;
+  }
+  .top-cont .top-nav {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    right: 0;
+    gap: 8px;
+    flex-direction: column-reverse;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 18px -13px black;
+    border-radius: 10px;
+    transition: 250ms;
+    top: 50px;
+    right: -200px;
+    opacity: 0;
+  }
+  .top-cont .top-nav--active {
+    right: 0;
+    opacity: 1;
+  }
+  .top-cont .top-nav-items {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sect1 {
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 0;
+  }
+  .sect1 .sect1-img {
+    width: 100%;
+  }
+  .sect1 .sect1-textbolck {
+    width: 100%;
+    padding: 0;
+  }
+  .sect1 .sect1-textbolck h2 {
+    font-size: 14px;
+  }
+  .sect1 .sect1-textbolck h3 {
+    font-size: 12px;
+  }
+  .sect1 .sect1-textbolck b {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sect4 .reyting-numbers {
+    display: none;
+  }
+}
 @media screen and (max-width: 500px) {
+  .head-img-cont .head-img-cont-contend h2 {
+    font-size: 25px;
+  }
+  .head-img-cont .head-img-cont-contend p {
+    font-size: 12px;
+  }
   .sect-7 {
     font-size: 12px;
   }
   .sect-7 ul {
     min-width: 300px;
     margin: 10px 0;
+  }
+  .footer-lists-cont h3 {
+    font-size: 15px;
+  }
+  .footer-lists-cont .footer-menu-block {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 340px) {

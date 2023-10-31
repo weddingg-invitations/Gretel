@@ -12,6 +12,8 @@
   background-size: cover;
   width: 350px;
   height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .info {
